@@ -6,39 +6,39 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 
 ---
 
-## 🧰 Project Structure & Description
+## Project Structure & Description
 
-### 👨‍🏫 Tutor Agent (Router Agent)
+### Tutor Agent (Router Agent)
 - **Role:** Acts as the central controller.
 - **Function:** Parses the user's query and routes it to the most suitable domain-specific agent.
 - **Logic:** Uses semantic similarity to determine if the query is best handled by the Math, Physics, or Chemistry agent.
 
 ---
 
-### 📐 Math Agent
+###  Math Agent
 - **Specialization:** Handles mathematical queries.
 - **Example:** Solving arithmetic, algebraic expressions, derivatives.
 - **Tools Used:**
-  - 🔢 *MathJS Tool*: Evaluates mathematical expressions.
-  - 🧮 *Basic Calculator Tool*: For performing calculations.
+  -  *MathJS Tool*: Evaluates mathematical expressions.
+  -  *Basic Calculator Tool*: For performing calculations.
   
 ---
 
-### ⚛️ Physics Agent
+###  Physics Agent
 - **Specialization:** Responds to physics-related questions.
 - **Example:** Newton's laws, force, motion, acceleration problems.
 - **Tools Used:**
-  - 🧲 *Physics Constants Tool*: Access to fundamental physical constants.
-  - 🔧 *Law Resolver Tool*: Helps with application of Newton's and other physics laws.
+  -  *Physics Constants Tool*: Access to fundamental physical constants.
+  -  *Law Resolver Tool*: Helps with application of Newton's and other physics laws.
 
 ---
 
-### 🧪 Chemistry Agent
+###  Chemistry Agent
 - **Specialization:** Deals with chemistry concepts.
 - **Example:** Periodic table lookups, atomic structure, reactions.
 - **Tools Used:**
-  - 🧬 *Periodic Table Tool*: Lookup elements and atomic properties.
-  - ⚗️ *Reagent Info Tool*: Understand chemical reactions or compounds.
+  -  *Periodic Table Tool*: Lookup elements and atomic properties.
+  -  *Reagent Info Tool*: Understand chemical reactions or compounds.
 
 ---
 
@@ -47,20 +47,20 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 - **Tools:** Added one extra tool usage in each agent
 
 
-## 💻 Tech Stack
+##  Tech Stack
 
 | Tech | Description |
 |------|-------------|
-| ⚛️ React (Vite) | Fast frontend framework for building UIs |
-| 🎨 Tailwind CSS | Utility-first CSS framework |
-| 🔑 Gemini API | Used for LLM interaction with agents |
-| 🧠 Multi-Agent Logic | Route and process user questions intelligently |
+|  React (Vite) | Fast frontend framework for building UIs |
+|  Tailwind CSS | Utility-first CSS framework |
+|  Gemini API | Used for LLM interaction with agents |
+|  Multi-Agent Logic | Route and process user questions intelligently |
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
-### 🛠️ Prerequisites
+###  Prerequisites
 
 - [Node.js](https://nodejs.org/) installed
 - [Vite](https://vitejs.dev/) (installed automatically via npm)
@@ -68,7 +68,7 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 
 ---
 
-### 📦 Installation Steps
+###  Installation Steps
 
 ```bash
 git clone https://github.com/your-username/ai-tutor-agent.git
@@ -79,7 +79,7 @@ cd ai-tutor-agent
 
 npm install
 
-🔐 Add Gemini API Key
+ Add Gemini API Key
 Launch the app.
 
 Paste your Gemini API Key into the input field in the sidebar.
