@@ -65,13 +65,12 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 ### 📦 Installation Steps
 
 ```bash
-# Clone the repo
 git clone https://github.com/your-username/ai-tutor-agent.git
 
-# Go into the project directory
+
 cd ai-tutor-agent
 
-# Install dependencies
+
 npm install
 
 🔐 Add Gemini API Key
@@ -84,3 +83,7 @@ Start the App
 npm run dev
 Visit: http://localhost:5173
 
+❗ Known Limitation
+❌ Tailwind CSS is not rendering correctly.
+
+Despite correctly installing and configuring Tailwind CSS (via postcss.config.js, tailwind.config.js, and importing tailwind.css), the styles do not apply properly on the UI. This may be due to a misconfiguration in the build system, PostCSS plugin order, or missing file references.

@@ -13,14 +13,12 @@ const BotIcon = () => <Icon path="M19.5 12.5c0 .9-.22 1.75-.62 2.5h-1.61c.21-.71
 const SendIcon = () => <Icon path="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" className="w-5 h-5" />;
 const KeyIcon = () => <Icon path="M21 10h-8.35A5.99 5.99 0 0 0 3 12a6 6 0 0 0 6 6h2v4h4v-4h2a4 4 0 0 0 4-4V6c0-1.11-.89-2-2-2H9.65A5.99 5.99 0 0 0 12 3a6 6 0 0 0-5.64 4H3v2h3.35A5.99 5.99 0 0 0 12.65 14H17a2 2 0 0 1-2-2v-2h6zM12 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" className="w-5 h-5" />;
 
-// --- Agent and Tool Definitions ---
 
 /**
  * A simple calculator tool.
  * For security and simplicity, this uses a regex and basic parsing 
  * instead of `eval()`. It only handles one operation at a time.
- * @param {string} expression - e.g., "25 * 4"
- * @returns {number | string} The result or an error message.
+
  */
 const calculatorTool = (expression) => {
     const sanitized = expression.trim();
