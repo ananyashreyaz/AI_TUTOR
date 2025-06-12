@@ -42,6 +42,11 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 
 ---
 
+### Extra Agent and tools implemented 
+- Chemistry agent
+- **Tools:** Added one extra tool usage in each agent
+
+
 ## 💻 Tech Stack
 
 | Tech | Description |
@@ -59,6 +64,7 @@ Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provid
 
 - [Node.js](https://nodejs.org/) installed
 - [Vite](https://vitejs.dev/) (installed automatically via npm)
+- The file containing the entire code : /src/App.jsx
 
 ---
 

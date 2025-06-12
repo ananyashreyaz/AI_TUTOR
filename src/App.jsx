@@ -43,8 +43,7 @@ const calculatorTool = (expression) => {
 
 /**
  * A tool for looking up physical constants.
- * @param {string} constantName - The name of the constant to look up.
- * @returns {string} The constant's value and unit, or a not found message.
+
 */
 const physicsConstantsTool = (constantName) => {
     const constants = {
@@ -59,8 +58,7 @@ const physicsConstantsTool = (constantName) => {
 
 /**
  * A tool for looking up periodic table elements.
- * @param {string} query - The element's name or symbol.
- * @returns {string} Information about the element or a not found message.
+
  */
 const periodicTableTool = (query) => {
     const elements = {
@@ -72,7 +70,7 @@ const periodicTableTool = (query) => {
         "n": { name: "Nitrogen", atomicNumber: 7, symbol: "N", mass: "14.007 u" },
         "na": { name: "Sodium", atomicNumber: 11, symbol: "Na", mass: "22.98976928 u" },
         "cl": { name: "Chlorine", atomicNumber: 17, symbol: "Cl", mass: "35.453 u" },
-        // Add more elements as needed
+        
     };
 
     const lowerCaseQuery = query.toLowerCase().trim();
@@ -90,7 +88,7 @@ const periodicTableTool = (query) => {
 /**
  * A tool for looking up Newton's Laws of Motion.
  
- * @returns {string} The description of the law or a not found message.
+
  */
 const newtonsLawTool = (lawNumber) => {
     const laws = {
@@ -125,7 +123,7 @@ export default function App() {
         if (!apiKey) {
             throw new Error('API key is not set.');
         }
-        // Use a proxy if available to avoid CORS issues in development
+        
         const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         try {
@@ -147,7 +145,7 @@ export default function App() {
         }
     };
 
-    // --- Agent Logic ---
+    // Agent Logic
 
     /**
      * Physics Agent: Answers physics questions and can use physics constants and Newton's Laws tools.
@@ -262,7 +260,7 @@ export default function App() {
         setIsThinking(true);
         setAgentStatus('Tutor Agent: Classifying query...');
 
-        // Add user message to chat
+     
         setMessages(prev => [...prev, { role: 'user', text: query }]);
         setInput('');
 
