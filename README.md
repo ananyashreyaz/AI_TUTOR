@@ -88,8 +88,16 @@ Start the App
 
 npm run dev
 Visit: http://localhost:5173
+```
 
-❗ Known Limitation
-❌ Tailwind CSS is not rendering correctly.
+### Functionalities
+- The agent's status changes as the prompt is given. 
+- More scalable as api is inntegrated in the frontend 
+- Based on the prompt the task is delegated to the respective agent 
+- Relevant responses are provided 
+- Tools are implemented correctly. 
+
+### Known Limitation
+ Tailwind CSS is not rendering correctly.
 
 Despite correctly installing and configuring Tailwind CSS (via postcss.config.js, tailwind.config.js, and importing tailwind.css), the styles do not apply properly on the UI. This may be due to a misconfiguration in the build system, PostCSS plugin order, or missing file references.
