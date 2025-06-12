@@ -1,12 +1,86 @@
-# React + Vite
+# 🧠 AI Tutor Agent System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an intelligent multi-agent system powered by **Google's Gemini AI**, designed to help users ask academic questions and receive targeted responses from specialized agents. It supports dynamic routing of user queries to domain-specific agents for **Math**, **Physics**, and **Chemistry**.
 
-Currently, two official plugins are available:
+Built with **React (Vite)** and **Tailwind CSS**, this frontend interface provides a chat-style experience and lets users interact with agents using their own Gemini API key.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧰 Project Structure & Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👨‍🏫 Tutor Agent (Router Agent)
+- **Role:** Acts as the central controller.
+- **Function:** Parses the user's query and routes it to the most suitable domain-specific agent.
+- **Logic:** Uses semantic similarity to determine if the query is best handled by the Math, Physics, or Chemistry agent.
+
+---
+
+### 📐 Math Agent
+- **Specialization:** Handles mathematical queries.
+- **Example:** Solving arithmetic, algebraic expressions, derivatives.
+- **Tools Used:**
+  - 🔢 *MathJS Tool*: Evaluates mathematical expressions.
+  - 🧮 *Basic Calculator Tool*: For performing calculations.
+  
+---
+
+### ⚛️ Physics Agent
+- **Specialization:** Responds to physics-related questions.
+- **Example:** Newton's laws, force, motion, acceleration problems.
+- **Tools Used:**
+  - 🧲 *Physics Constants Tool*: Access to fundamental physical constants.
+  - 🔧 *Law Resolver Tool*: Helps with application of Newton's and other physics laws.
+
+---
+
+### 🧪 Chemistry Agent
+- **Specialization:** Deals with chemistry concepts.
+- **Example:** Periodic table lookups, atomic structure, reactions.
+- **Tools Used:**
+  - 🧬 *Periodic Table Tool*: Lookup elements and atomic properties.
+  - ⚗️ *Reagent Info Tool*: Understand chemical reactions or compounds.
+
+---
+
+## 💻 Tech Stack
+
+| Tech | Description |
+|------|-------------|
+| ⚛️ React (Vite) | Fast frontend framework for building UIs |
+| 🎨 Tailwind CSS | Utility-first CSS framework |
+| 🔑 Gemini API | Used for LLM interaction with agents |
+| 🧠 Multi-Agent Logic | Route and process user questions intelligently |
+
+---
+
+## 🚀 How to Run the Project
+
+### 🛠️ Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- [Vite](https://vitejs.dev/) (installed automatically via npm)
+
+---
+
+### 📦 Installation Steps
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/ai-tutor-agent.git
+
+# Go into the project directory
+cd ai-tutor-agent
+
+# Install dependencies
+npm install
+
+🔐 Add Gemini API Key
+Launch the app.
+
+Paste your Gemini API Key into the input field in the sidebar.
+
+Start the App
+
+npm run dev
+Visit: http://localhost:5173
+

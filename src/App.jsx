@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-// --- UI Components ---
 
-// Icon component for better visuals
+
 const Icon = ({ path, className = "w-6 h-6" }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <svg xmlns="" viewBox="0 0 24 24" fill="currentColor" className={className}>
         <path d={path} />
     </svg>
 );
@@ -92,7 +91,7 @@ const periodicTableTool = (query) => {
 
 /**
  * A tool for looking up Newton's Laws of Motion.
- * @param {string} lawNumber - The number of the law (e.g., "1", "2", "3").
+ 
  * @returns {string} The description of the law or a not found message.
  */
 const newtonsLawTool = (lawNumber) => {
@@ -365,7 +364,7 @@ export default function App() {
                                         <p className={`text-xs font-bold mb-1 ${
                                             msg.agent === 'Math' ? 'text-purple-600' :
                                             msg.agent === 'Physics' ? 'text-blue-600' :
-                                            msg.agent === 'Chemistry' ? 'text-green-600' : // New color for Chemistry Agent
+                                            msg.agent === 'Chemistry' ? 'text-green-600' : 
                                             msg.agent === 'System' ? 'text-red-600' : 'text-indigo-600'
                                         }`}>
                                             {msg.agent} Agent
